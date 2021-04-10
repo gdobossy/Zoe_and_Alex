@@ -1,0 +1,325 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png");
+    text-align:center;
+}
+
+/*fonts setting*/
+
+.libre_fonts{
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: .05rem;
+    font-size: 1.4rem;
+}
+
+.mulish_fonts{
+    font-family: 'Mulish', sans-serif;
+    font-size:1.2rem;
+    line-height:1.9rem;
+    letter-spacing: .05rem;
+}
+
+.great_fonts{
+    font-family: 'Great Vibes', cursive;
+}
+
+header{
+    background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg");
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+}
+
+.header_div{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: auto;
+    width: 28rem;
+    height:28rem;
+    padding:1.5rem;
+}
+
+@media (max-width: 845px){
+    .header_div{
+        width:100%;
+        height: 9rem;
+
+    }
+}
+
+.tagline{
+    color: hsla(0,0%,100%,.9);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+@media (max-width: 845px){
+    .tagline{
+        text-transform: initial;
+    }
+}
+
+.line{
+    border-bottom: .051rem solid white;
+    margin: 1rem 7rem 0 7rem;
+}
+
+@media (max-width: 845px){
+    .line{
+        border-bottom: .051rem solid white;
+        margin: 1rem 33% 0 33%;
+    }
+}
+
+.names {
+    color:#d2ba87;
+    font-size: 8rem;
+    line-height: 12rem;
+}
+
+@media (max-width: 845px){
+    .names{
+        font-size:3.5rem;
+        line-height: 6rem;
+    }
+}
+
+.date_flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.short_line{
+    border-bottom: .051rem solid white;
+    width:1.5rem;
+}
+
+
+.date{
+    color: hsla(0,0%,100%,.9);
+    letter-spacing: .2rem;
+    margin: 0 .5rem;
+}
+
+.submenu{
+    font-size:3.5rem;
+    padding: 3rem 0;
+}
+.black{
+    color:#444349;
+}
+
+.locations_flex{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 845px){
+    .locations_flex{
+        display:block;
+    }
+}
+
+
+.locations_h2{
+    color:#444349;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+img{
+    height:8rem;
+    margin:2rem;
+}
+
+.locations_pharagraph{
+    color:#444349;
+    margin: 0 4rem 6rem;
+}
+
+@media(max-width: 845px){
+    .locations_pharagraph::after{
+    content:"";
+    border-bottom: .2rem solid #444349;
+    display:block;
+    width:30%;
+    margin: 2rem auto;
+
+    }
+
+    .locations_pharagraph{
+        margin:0 4rem 0;
+    }
+
+    .br_locations{
+        display:none;
+    }
+}
+
+.dark_background {
+    background: hsla(100,0%,0%,.6);
+}
+
+.gold{
+    color:#d2ba87;
+}
+.program{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content:center;
+}
+
+
+.program_align{
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    width:fit-content;
+}
+
+@media (max-width: 845px){
+    .program_align{
+        margin-left:2%;
+    }
+}
+
+.program_pharagraph{
+    color:#d2ba87;
+    width:fit-content;
+}
+
+.quote{
+    font-style: oblique;
+    margin:2rem 0;
+}
+
+.gifts_p{
+    color:#444349;
+}
+
+.down_margin{
+    margin-bottom: 2rem;
+}
+
+.questions_pharagraph{
+    color:#d2ba87;
+    display:flex;
+    text-align:left;
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 845px){
+    .questions_pharagraph{
+        display:block;
+        padding-bottom:1rem;
+    }
+}
+
+.questions_h2{
+    font-weight: normal;
+}
+
+@media (max-width: 845px){
+    .questions_h2{
+        text-align: center;
+    }
+}
+
+.questions_column{
+    padding-left: 7vw;
+    width: 24vw;
+
+}
+
+@media (max-width: 845px){
+    .questions_column{
+        width:auto;
+        padding: 0 2%;
+    }
+
+    .questions_column::after{
+    content:"";
+    border-bottom: .2rem solid #d2ba87;
+    display:block;
+    width:50%;
+    margin: 2rem auto;
+    }
+
+}
+
+.right_question_column{
+    padding-right: 7vw;
+}
+
+.question{
+    margin-bottom:1rem;
+    margin-top:2rem;
+}
+
+footer{
+    background: #606060;
+    color: white;
+    padding: 1.5rem;
+}
+
+.contact_pharagraph{
+    color:#444349;
+    line-height: 3rem;
+    padding-bottom: 3rem;
+}
+
+a{
+    color:#bd806e;
+    text-decoration: none;
+}
