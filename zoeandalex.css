@@ -314,6 +314,10 @@ img{
     margin-top:2rem;
 }
 
+.e-mail{
+    overflow-wrap: break-word;
+}
+
 footer{
     background: #606060;
     color: white;
